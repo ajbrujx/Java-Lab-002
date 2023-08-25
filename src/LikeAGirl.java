@@ -69,10 +69,14 @@ public class LikeAGirl {
             if (!checksumOkay) {
                 System.out.println(scriptDivider + "\n" + scriptInvalid + "\n" + scriptDivider);
                 System.out.printf(containsChar ? typeChar : "");
-                System.out.printf(containsSpecial ? typeSpecial : "");
-                System.out.printf(containsWhite ? typeWhite : "");
+                containsChar = false;
+                System.out.printf(!containsWhite && containsSpecial ? typeSpecial : "");
+                containsSpecial = false;
+                System.out.printf( (containsWhite && !containsSpecial) ? typeWhite : "");
+                containsWhite = false;
                 System.out.println(scriptDivider);
                 }
+
         } while (!checksumOkay);
 
         System.out.printf(script4_string, userString);
