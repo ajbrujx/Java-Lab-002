@@ -7,6 +7,26 @@ public class LikeAGirl {
      **/
     public static void main(String[] args) {
 
+        /*
+
+        soutf(script1_gender, genderBoy);                                               //"Like a Boy" prompt
+        soutf(script2_verb_gender, verbRun, genderBoy);
+        soutf(script2_verb_gender, verbFight, genderBoy);
+        soutf(script3_gender, genderBoy, String.format(scriptChoice, good, bad) );      //prompts user input
+
+        do {                                                                            //userInput checksum
+            userInput = scanner.nextInt();
+            if (userInput != 1 && userInput != 2) {
+                soutf(scriptInvalid, String.format(scriptChoice, good, bad) );
+            }
+        } while (userInput != 1 && userInput != 2);
+
+        soutf(script4_value, userInput, (userInput == good) ? (script5_2 : script5_1) );
+        soutf(scriptDamage_float, emotionalDamage);
+        soutf(script6, trueOrFalse);
+
+        */
+
         String scriptTemplateLine1 = "What does it mean to do something, \"%s\"?";
         String scriptTemplateLine2 = "Show me what it looks like to run, \"%s.\"%n";
         String scriptTemplateLine3 = "Show me what it looks like to fight, \"%s.\"";
