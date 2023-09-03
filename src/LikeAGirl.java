@@ -55,6 +55,10 @@ public class LikeAGirl {
 
         int answer = Integer.parseInt(s.nextLine());
 
+        if (answer == bad) {
+            trueOrFalse = true;
+            }
+
         //BRANCH for checksum
 
         System.out.printf(script4_value, answer, (answer == good) ? script5_2 : script5_1);
