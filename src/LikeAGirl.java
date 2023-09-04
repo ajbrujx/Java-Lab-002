@@ -4,6 +4,10 @@ public class LikeAGirl {
     /**
      * "Like a Girl," Super Bowl XLIX (2015) - <a href="https://www.youtube.com/watch?v=5yLXrWLvwAo">Like a Girl</a>
      * @param args Command line arguments [The source file path, The target file path, ...]
+     * @author Trevor Hartman
+     * @author Atticus Blanco
+     *
+     * @since Version 1.0
      **/
     public static void main(String[] args) {
 
