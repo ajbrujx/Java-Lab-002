@@ -55,12 +55,60 @@ Did you answer like a nice person? FALSE
 
 ### Part 2 - Interpretation
 Take note of the various variables and their data types. Write a brief summary in this section of the README.md file listing the:
-* Variable name
-* Its data type
-* and example values you can assign them.
 
-Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
-* Hint: your IDE can help you discover wrong assignments or variable names!
+* My code contains variables of the following type:
+  * float: float is a Primitive Data Type. It can store 32 bit floating point value. A bit is used for the +/- sign of the value, an Exponent field that determines the precision (the floating of the point), and the fraction part in binary
+    * emotionalDamage
+  * boolean: A primitive type. It's either TRUE or FALSE. Nothing fancy. Dry toast
+    * checksumOkay
+    * containsChar
+    * containsWhite
+    * containsSpecial
+    * trueOrFalse
+  * char: Another primitive. Stores a single character in 
+    * checksumChar
+  * int: Primitive data type. Stores an integer value in 32-bit memory
+    * i
+  * Strings: Strings are non-primitive variables, meaning they are comprised of primitives. When the compiler scans the code, the String variables are detected, and their values are stored in the Constant Pool within the Class file. The compiler creates a char[] array and stores the individual characters into each index of the array. During runtime, the Constant pool is in the Stackframe. When the variable is declared at runtime, the variable name is created in temporary memory on the Heap, and is assigned the address of the char[] array within the Constant Pool
+    * script1_gender
+    * script2_verb_gender
+    * script3_gender
+    * script4_string
+    * script5_1
+    * script5_2
+    * script6_float
+    * script7_bool
+    * scriptChoice
+    * scriptDivider
+    * scriptInvalid
+    * verbRun
+    * verbFight
+    * genderBoy
+    * good
+    * bad
+    * typeChar
+    * typeSpecial
+    * typeWhite
+    * userString;
+
+
+Variable cannot be called:
+  * "public" because it is a reserved keyword
+  * "1wrongvar" because it has a leading number.
+
+Wrong variable assignment:
+1. 
+```
+boolean trueOrFalse = "True";
+```
+A boolean cannot contain a String.
+2.
+
+```
+String badNum = 13;
+```
+A String cannot contain an int.
+
 
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
